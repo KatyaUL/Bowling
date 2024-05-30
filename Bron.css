@@ -1,0 +1,181 @@
+@font-face {
+  font-family:'Kyiv Type Titling Reg';
+  font-style: Regular3;
+  font-style: Medium;
+  font-style: Medium2;
+  src: url(./fonts/KyivTypeTitling-Regular3.ttf);
+  src: url(./fonts/KyivTypeTitling-Medium.ttf);
+  src: url(./fonts/KyivTypeTitling-Medium2.ttf);
+  color:#fff;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'Kyiv Type Titling Med';
+  font-style: Medium;
+  src: url(./fonts/KyivTypeTitling-Medium.ttf);
+  color:#fff;
+  font-weight: 500;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kyiv Type Titling Reg';
+   
+}
+
+.background{
+    background: url('images/Reg.png') no-repeat;
+    min-height: 300vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+a{
+  color:#fff;
+  text-decoration: none;
+  font-size: 25px;
+  
+}
+
+h1,h2,h3{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 25px;
+  
+}
+.header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 40px;
+}
+
+.header-inner{
+  display: flex;
+  /* padding-top: 40px; */
+}
+
+.logo-img{
+  width: 150px;
+  height: 150px;
+  padding-right: 49px;
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+}
+.nav-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  /* margin-top: 35px; */
+}
+.menu{
+  display: flex;
+  padding-top: 45px;
+  /*padding-left: 277px;*/
+}
+
+.menu-link{
+  display: inline-block;
+  transition: opacity .1s linear;
+  position: relative;
+}
+.logup-item{
+  display: flex;
+}
+
+.menu-link:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+  background-color: #C1F09B;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: 1;
+  transition: opacity .1s linear;
+}
+
+.menu-link:hover {
+  color:#C1F09B;
+}
+.menu-link:hover:after{
+  opacity: 1;
+}
+
+
+ main{ /*переим */
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+ 
+}
+
+.container{
+  max-width: 2400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 50px;
+    margin-left: 209px;
+  }
+
+/* .dorozki{
+    position: static;
+    top: 95px;
+    left: 195px; 
+}  */
+
+.dates {
+  height: 79px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  margin-bottom: 30px;
+  
+
+}
+
+.day-tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #7E65FF;
+  font-family: 'Kyiv Type Titling Med';
+  font-size: 20px;  
+  color: #75F16A;
+  border-top: 2px solid #75F16A;
+  transition: .6s;
+}
+
+small{
+  font-size: 15px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.day-tab:hover{
+  background: #75F16A;
+  color: #7E65FF;
+  border-top: 2px solid #7E65FF;
+}
